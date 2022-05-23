@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="pixel-art.component.scss">
+
+<div *ngFor="let pixelArt of pixelArtList" class="imagens" >
+  <div class="card mb-3" style="width: 18rem; text-align: center;">
+    <img [src]="pixelArt.src" class="card-img-top" [alt]="pixelArt.nome">
+    <div class="card-body">
+      <p class="card-text">{{ pixelArt.nome }}</p>
+    </div>
+  </div>
+
+</div>
+
